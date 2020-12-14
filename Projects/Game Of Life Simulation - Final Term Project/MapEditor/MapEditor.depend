@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1579793760 source:e:\codeblocks workspace\mapeditor\main.c
+	<stdlib.h>
+	<time.h>
+	<stdio.h>
+	<stdbool.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+	<math.h>
+

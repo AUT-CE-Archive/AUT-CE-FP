@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1580136014 source:e:\codeblocks workspace\game of life\main.c
+	<stdlib.h>
+	<time.h>
+	<stdio.h>
+	<stdbool.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+	<math.h>
+	"color.h"
+	"headers.h"
+	"LinkedList.h"
+	"Game.h"
+	"MapGenerator.h"
+	"Load&Save.h"
+	"VisualMap.h"
+
+1580031134 e:\codeblocks workspace\game of life\color.h
+
+1579969793 e:\codeblocks workspace\game of life\headers.h
+
+1580420802 e:\codeblocks workspace\game of life\linkedlist.h
+
+1579945740 e:\codeblocks workspace\game of life\singleplayer.h
+
+1580329300 e:\codeblocks workspace\game of life\game.h
+
+1580034979 e:\codeblocks workspace\game of life\mapgenerator.h
+
+1580548539 e:\codeblocks workspace\game of life\load&save.h
+
+1580126424 e:\codeblocks workspace\game of life\visualmap.h
+

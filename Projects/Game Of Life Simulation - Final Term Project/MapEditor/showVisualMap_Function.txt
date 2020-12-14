@@ -1,0 +1,55 @@
+/// Function: Make, Initialize & Show Visual Matrix With The Given Size On Runtime (Dynamic)
+void showVisualMap(int mapSize, Blocks blockMatrix[][mapSize]) {
+
+    /// Top Layer
+    for (int i = 0; i < mapSize; i++) {
+        setCellColor(mapSize, 0, i, blockMatrix);
+        if (i == 0)
+            printf(" ━━━");
+        else if (i % 2 == 0)
+            printf("       ━━━");
+    }
+    printf("\n");
+
+    for (int i = 0; i < mapSize; i++) {
+
+        /// First Layer
+        for (int j = 0; j < mapSize; j++) {
+            setCellColor(mapSize, i, j, blockMatrix);
+            if (j % 2 == 0)
+                printf("┃ # ┃");
+            else
+                printf(" ━━━ ");
+        }
+        printf("\n");
+
+        /// Second Layer
+        for (int j = 0; j < mapSize; j++) {
+            setCellColor(mapSize, i, j, blockMatrix);
+            if (j % 2 == 0)
+                printf(" ━━━ ");
+            else
+                printf("┃ # ┃");
+        }
+        printf("\n");
+
+        /// Third Layer
+        for (int j = 0; j < mapSize; j++) {
+
+            if (j % 2 == 1)
+                setCellColor(mapSize, i, j, blockMatrix);
+            else
+                setCellColor(mapSize, i + 1, j, blockMatrix);
+
+            if (i != mapSize - 1)
+                printf(" ━━━ ");
+            else {
+                if (i == mapSize - 1 && j % 2 == 1)
+                    printf(" ━━━ ");
+                else
+                    printf("     ");
+            }
+        }
+        printf("\n");
+    }
+}
